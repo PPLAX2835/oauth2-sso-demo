@@ -1,5 +1,7 @@
 # SpringSecurity + Oauth2  授权码模式
 
+参考
+
 [Spring Security OAuth2 Demo —— 授权码模式 (Authorization Code) - 东北小狐狸 - 博客园 (cnblogs.com)](https://www.cnblogs.com/hellxz/p/oauth2_oauthcode_pattern.html#%E5%8F%97%E4%BC%97%E5%89%8D%E6%8F%90)
 
 [SpringBoot+SpringSecurity+oAuth2+Redis实现简单授权认证-CSDN博客](https://blog.csdn.net/lux_yu/article/details/108389181)
