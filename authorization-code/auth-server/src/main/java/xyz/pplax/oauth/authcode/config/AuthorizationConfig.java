@@ -1,8 +1,8 @@
 package xyz.pplax.oauth.authcode.config;
 
-/**
- * 这是内存存储client_id的方案
- */
+///**
+// * 这是内存存储client_id的方案
+// */
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.context.annotation.Configuration;
 //import org.springframework.security.crypto.password.PasswordEncoder;
