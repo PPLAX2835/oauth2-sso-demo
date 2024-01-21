@@ -27,15 +27,20 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         return configuration.getAuthenticationManager();
     }
 
-    @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        // @formatter: off
-        auth.inMemoryAuthentication()
-                .withUser("pplax")
-                .password(passwordEncoder().encode("123456"))
-                .authorities(Collections.emptyList());
-        // @formatter: on
-    }
+//    /**
+//     * 如果自定义userservice进行验证，就把这个删掉
+//     * @param auth
+//     * @throws Exception
+//     */
+//    @Override
+//    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+//        // @formatter: off
+//        auth.inMemoryAuthentication()
+//                .withUser("pplax")
+//                .password(passwordEncoder().encode("123456"))
+//                .authorities(Collections.emptyList());
+//        // @formatter: on
+//    }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {

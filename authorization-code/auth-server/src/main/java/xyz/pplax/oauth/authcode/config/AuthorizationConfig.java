@@ -157,8 +157,11 @@ public class AuthorizationConfig extends AuthorizationServerConfigurerAdapter {
                 .secret(passwordEncoder.encode("user-secret"))
                 .authorizedGrantTypes("refresh_token", "authorization_code", "password")
                 .accessTokenValiditySeconds(3600)
-                .scopes("all");
+                .scopes("all")
+                .resourceIds("test_resource")
+                .redirectUris("https://www.bilibili.com/");
     }
+//    http://localhost:8080/oauth/authorize?client_id=user-client&client_secret=user-secret&response_type=code&redirect_uri=https://www.bilibili.com/
 
     @Override
     public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {

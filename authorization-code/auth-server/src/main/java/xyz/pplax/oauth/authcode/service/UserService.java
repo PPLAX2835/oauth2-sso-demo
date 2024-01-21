@@ -19,6 +19,7 @@ public class UserService  implements UserDetailsService {
     private PasswordEncoder passwordEncoder;
 
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        System.out.println("auth");
         // 查询数据库操作
         if(!username.equals("admin")){
             throw new UsernameNotFoundException("the user is not found");
